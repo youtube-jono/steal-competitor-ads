@@ -1,0 +1,133 @@
+/* Each platform keeps its own real styling. Nothing here uses the shell theme. */
+.ad { background: #fff; color: #050505; text-align: left; box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 10px 30px rgba(0,0,0,.10); overflow: hidden; }
+.ad img { display: block; }
+.ad img.broken { visibility: hidden; }
+.ad .clamp2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.ad .clamp3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.media-ph { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 28px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.media-ph.vid { justify-content: flex-end; padding-bottom: 26px; }
+.media-ph small { margin-top: 12px; font-size: 13px; font-weight: 600; opacity: .7; letter-spacing: 0; }
+.play { z-index: 2; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 72px; height: 72px; border-radius: 50%; background: rgba(0,0,0,.55); display: grid; place-items: center; border: 3px solid rgba(255,255,255,.9); }
+.play svg { margin-left: 5px; }
+
+/* ---------- Google search ad ---------- */
+.g-ad { width: 652px; padding: 20px 24px 18px; border-radius: 16px; font-family: Arial, Helvetica, sans-serif; color: #202124; }
+.g-sponsored { font-size: 14px; font-weight: 700; line-height: 20px; margin-bottom: 10px; color: #202124; }
+.g-head { display: flex; align-items: center; gap: 12px; }
+.g-fav { width: 28px; height: 28px; border-radius: 50%; background: #f1f3f4; border: 1px solid #dadce0; display: grid; place-items: center; flex: none; position: relative; overflow: hidden; font-size: 13px; font-weight: 700; color: #5f6368; }
+.g-fav img { position: absolute; width: 18px; height: 18px; left: 4px; top: 4px; background: #f1f3f4; }
+.g-site { min-width: 0; flex: 1; }
+.g-name { font-size: 14px; line-height: 20px; color: #202124; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.g-url { font-size: 12px; line-height: 18px; color: #4d5156; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.g-dots { color: #4d5156; flex: none; }
+.g-title { display: block; margin: 8px 0 3px; font-size: 20px; line-height: 26px; color: #1a0dab; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-decoration: none; }
+.g-desc { font-size: 14px; line-height: 22px; color: #4d5156; }
+.g-desc .d-date { color: #70757a; }
+.g-links { margin-top: 6px; font-size: 14px; line-height: 22px; color: #1a0dab; }
+.g-links .sep { color: #4d5156; padding: 0 6px; }
+.g-callouts { margin-top: 4px; font-size: 14px; line-height: 22px; color: #4d5156; }
+.g-callouts .sep { padding: 0 6px; }
+.g-creative { margin-top: 14px; border: 1px solid #ebebeb; border-radius: 8px; overflow: hidden; background: #fff; }
+.g-creative img { width: 100%; height: auto; }
+.g-shot { width: 600px; padding: 0; border-radius: 14px; }
+.g-shot .g-creative { margin: 0; border: 0; border-radius: 0; }
+.g-shot .g-creative img { min-height: 120px; }
+.g-creative:has(.media-ph) { position: relative; aspect-ratio: 1.91 / 1; }
+.g-display { width: 400px; }
+.g-video { width: 560px; padding: 0; }
+.g-vid { position: relative; width: 560px; aspect-ratio: 16 / 9; background: #0f0f0f; overflow: hidden; }
+.g-vid > img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
+.g-vid-ad { position: absolute; left: 10px; bottom: 10px; background: #fbc02d; color: #0f0f0f; font: 700 12px Roboto, Arial, sans-serif; padding: 2px 6px; border-radius: 3px; }
+.g-vid-meta { display: flex; gap: 12px; padding: 12px 14px 16px; font-family: Roboto, Arial, sans-serif; }
+.g-vid-meta .av { width: 36px; height: 36px; font-size: 14px; }
+.g-vid-title { font-size: 16px; font-weight: 500; line-height: 22px; color: #0f0f0f; }
+.g-vid-sub { font-size: 14px; color: #606060; line-height: 20px; margin-top: 2px; }
+
+/* ---------- Facebook feed post ---------- */
+.fb { width: 470px; border-radius: 10px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #050505; }
+.fb-head { display: flex; align-items: center; gap: 10px; padding: 12px 16px 0; }
+.av { width: 40px; height: 40px; border-radius: 50%; flex: none; position: relative; overflow: hidden; display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 16px; }
+.av img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.fb-who { flex: 1; min-width: 0; }
+.fb-name { font-size: 15px; font-weight: 600; line-height: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fb-sub { font-size: 13px; line-height: 16px; color: #65676b; display: flex; align-items: center; gap: 4px; }
+.fb-icons { display: flex; gap: 18px; color: #65676b; align-items: center; }
+.fb-text { padding: 10px 16px 12px; }
+.fb-text > div { font-size: 15px; line-height: 20px; white-space: pre-line; }
+.fb-text .more { color: #65676b; font-weight: 600; }
+.fb-media { position: relative; width: 470px; aspect-ratio: 1 / 1; background: #e4e6eb; overflow: hidden; }
+.fb-media > img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
+.fb-link { display: flex; align-items: center; gap: 12px; padding: 10px 14px 12px 16px; background: #f0f2f5; }
+.fb-link-l { flex: 1; min-width: 0; }
+.fb-domain { font-size: 13px; line-height: 16px; color: #65676b; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fb-hl { font-size: 17px; line-height: 21px; font-weight: 600; margin-top: 2px; }
+.fb-ld { font-size: 15px; line-height: 20px; color: #65676b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fb-cta { flex: none; height: 36px; padding: 0 12px; border-radius: 6px; background: #e2e5e9; font-size: 15px; font-weight: 600; display: grid; place-items: center; color: #050505; white-space: nowrap; }
+.fb-actions { display: flex; justify-content: space-around; margin: 4px 12px 6px; padding-top: 4px; border-top: 1px solid #ced0d4; }
+.fb-actions span { display: flex; align-items: center; gap: 7px; padding: 8px 10px; font-size: 15px; font-weight: 600; color: #65676b; }
+.fb-carousel { display: flex; gap: 8px; padding: 0 16px 14px; overflow: hidden; }
+.fb-card { flex: none; width: 300px; border: 1px solid #ced0d4; border-radius: 8px; overflow: hidden; background: #fff; }
+.fb-card .img { position: relative; width: 300px; height: 300px; background: #e4e6eb; }
+.fb-card .img img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
+.fb-card-b { display: flex; align-items: center; gap: 8px; padding: 10px 12px; background: #f0f2f5; }
+.fb-card-b .t { flex: 1; min-width: 0; font-size: 15px; font-weight: 600; line-height: 19px; }
+.fb-card-b .fb-cta { height: 32px; font-size: 14px; }
+
+/* ---------- Instagram feed post ---------- */
+.ig { width: 470px; border-radius: 10px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #000; }
+.ig-head { display: flex; align-items: center; gap: 10px; padding: 10px 12px; }
+.ig-ring { padding: 2px; border-radius: 50%; background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); }
+.ig-ring .av { width: 32px; height: 32px; border: 2px solid #fff; font-size: 13px; }
+.ig-name { font-size: 14px; font-weight: 600; line-height: 18px; }
+.ig-sub { font-size: 12px; line-height: 15px; color: #000; }
+.ig-cta { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; font-size: 14px; font-weight: 600; color: #0095f6; border-bottom: 1px solid #efefef; }
+.ig-actions { display: flex; gap: 16px; padding: 10px 12px 6px; }
+.ig-text { padding: 0 12px 14px; font-size: 14px; line-height: 18px; }
+.ig-text b { font-weight: 600; margin-right: 5px; }
+
+/* ---------- TikTok vertical video ---------- */
+.tt { width: 360px; height: 640px; border-radius: 18px; background: #000; color: #fff; position: relative; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+.tt-media { position: absolute; inset: 0; background: #111; }
+.tt-media > img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
+.tt-shade { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 18%, rgba(0,0,0,0) 52%, rgba(0,0,0,.72) 100%); }
+.tt-top { position: absolute; top: 18px; left: 0; right: 0; display: flex; justify-content: center; gap: 22px; font-size: 16px; font-weight: 600; }
+.tt-top span { opacity: .65; }
+.tt-top span.on { opacity: 1; position: relative; }
+.tt-top span.on::after { content: ""; position: absolute; left: 50%; bottom: -8px; width: 26px; height: 3px; border-radius: 2px; background: #fff; transform: translateX(-50%); }
+.tt-search { position: absolute; right: 16px; top: 16px; }
+.tt-rail { position: absolute; right: 10px; bottom: 150px; display: flex; flex-direction: column; align-items: center; gap: 18px; font-size: 12px; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,.4); }
+.tt-rail > div { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.tt-av { position: relative; margin-bottom: 8px; }
+.tt-av .av { width: 48px; height: 48px; border: 2px solid #fff; }
+.tt-plus { position: absolute; left: 50%; bottom: -9px; transform: translateX(-50%); width: 20px; height: 20px; border-radius: 50%; background: #fe2c55; display: grid; place-items: center; }
+.tt-disc { width: 42px; height: 42px; border-radius: 50%; background: radial-gradient(circle, #444 0 30%, #161616 32% 100%); border: 7px solid #222; }
+.tt-bottom { position: absolute; left: 14px; right: 76px; bottom: 16px; }
+.tt-handle { font-size: 16px; font-weight: 700; line-height: 20px; }
+.tt-caption { margin-top: 6px; font-size: 14px; line-height: 19px; }
+.tt-sponsored { display: inline-block; margin-top: 8px; padding: 2px 6px; border-radius: 3px; background: rgba(255,255,255,.22); font-size: 12px; font-weight: 600; }
+.tt-music { margin-top: 8px; display: flex; align-items: center; gap: 6px; font-size: 14px; white-space: nowrap; overflow: hidden; }
+.tt-cta { margin-top: 12px; height: 40px; border-radius: 4px; background: #fe2c55; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; font-size: 15px; font-weight: 600; }
+.tt-ph { position: absolute; inset: 0; display: flex; align-items: center; padding: 40px 30px 180px; font-size: 30px; font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; }
+
+/* ---------- LinkedIn sponsored post ---------- */
+.li { width: 520px; border-radius: 10px; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: rgba(0,0,0,.9); }
+.li-head { display: flex; align-items: flex-start; gap: 8px; padding: 12px 16px 0; }
+.li-logo { width: 48px; height: 48px; border-radius: 4px; flex: none; position: relative; overflow: hidden; display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 18px; }
+.li-logo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #fff; }
+.li-who { flex: 1; min-width: 0; }
+.li-name { font-size: 14px; font-weight: 600; line-height: 20px; }
+.li-sub { font-size: 12px; line-height: 16px; color: rgba(0,0,0,.6); }
+.li-dots { color: rgba(0,0,0,.6); }
+.li-text { padding: 10px 16px 10px; }
+.li-text > div { font-size: 14px; line-height: 20px; }
+.li-text .more { color: rgba(0,0,0,.6); }
+.li-media { position: relative; width: 520px; aspect-ratio: 1.6 / 1; background: #1d2226; overflow: hidden; }
+.li-media.square { aspect-ratio: 1 / 1; background: #eef3f8; }
+.li-media > img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
+.li-bar { display: flex; align-items: center; gap: 14px; padding: 10px 16px 12px; background: #eef3f8; }
+.li-bar-l { flex: 1; min-width: 0; }
+.li-hl { font-size: 14px; font-weight: 600; line-height: 20px; }
+.li-domain { font-size: 12px; line-height: 16px; color: rgba(0,0,0,.6); }
+.li-cta { flex: none; height: 32px; padding: 0 16px; border: 1px solid #0a66c2; border-radius: 16px; color: #0a66c2; font-size: 16px; font-weight: 600; display: grid; place-items: center; white-space: nowrap; background: #fff; }
+.li-actions { display: flex; justify-content: space-around; margin: 0 8px; padding: 4px 0; border-top: 1px solid #e8e8e8; }
+.li-actions span { display: flex; align-items: center; gap: 6px; padding: 10px 8px; font-size: 14px; font-weight: 600; color: rgba(0,0,0,.6); }
